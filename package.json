@@ -1,6 +1,6 @@
 {
   "name": "copy-mjs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "🛠 Copy `.js` files from input directory to `.mjs` files in output directory.",
   "main": "./lib/index.js",
   "bin": "./bin/copy-mjs.js",
