@@ -1,0 +1,44 @@
+{
+  "name": "copy-mjs",
+  "version": "0.0.0",
+  "description": "🛠 Copy `.js` files from input directory to `.mjs` files in output directory.",
+  "main": "./lib/index.js",
+  "bin": "./bin/copy-mjs.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:major": "npm version major && npm publish && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/copy-mjs.git"
+  },
+  "keywords": [
+    "build",
+    "tool",
+    "es",
+    "esm",
+    "commonjs",
+    "cjs",
+    "mjs"
+  ],
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/copy-mjs/issues"
+  },
+  "homepage": "https://github.com/Andarist/copy-mjs#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cp-file": "^6.0.0",
+    "tiny-glob": "^0.2.1",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
+    "prettier": "^1.12.1"
+  }
+}
